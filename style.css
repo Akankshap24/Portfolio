@@ -1,9 +1,10 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 :root {
-  --primary-color: rgb(124, 218, 235);
-  --primary-color-dark: rgb(10, 152, 177);;
-  --secondary-color: rgb(7, 96, 112);; ;
+  --primary-color: rgb(53, 155, 173);
+  --primary-color-dark: rgb(10, 152, 177);
+  --secondary-color: rgb(7, 96, 112);
   --text-dark: white;
   --text-light: #6b7280;
   --extra-light: black;
@@ -48,6 +49,7 @@ nav .logo a {
   color: var(--primary-color);
   transition: 0.3s;
 }
+
 nav .logo a:hover {
   color: var(--primary-color-dark);
 }
@@ -59,6 +61,7 @@ nav .checkbox {
 nav input {
   display: none;
 }
+
 nav .checkbox i {
   font-size: 2rem;
   color: var(--primary-color);
@@ -178,42 +181,36 @@ ul li a:hover {
   border-radius: 100%;
 }
 
-@media (width < 750px) {
-  nav .checkbox {
-    display: block;
-  }
+footer {
+  background-color: var(--extra-light);
+  padding: 2rem 0;
+  text-align: center;
+}
 
-  ul {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 85px);
-    left: -100%;
-    top: 85px;
-    background-color: var(--extra-light);
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-  }
+.footer__content {
+  max-width: var(--max-width);
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
 
-  nav #check:checked ~ ul {
-    left: 0;
-  }
+.contact-info, .projects, .qualifications {
+  flex: 1;
+}
 
-  ul li a {
-    font-size: 1.25rem;
-  }
+.contact-info h2, .projects h2, .qualifications h2 {
+  margin-bottom: 1rem;
+}
 
-  .section__container {
-    padding: 10rem 1rem 5rem 1rem;
-    text-align: center;
-    grid-template-columns: repeat(1, 1fr);
-  }
+.projects ul {
+  list-style: none;
+  padding: 0;
+}
 
-  .image {
-    grid-area: 1/1/2/2;
-  }
+.projects ul li {
+  margin-bottom: 0.5rem;
+}
 
-  .action__btns {
-    margin: auto;
-  }
+.qualifications p {
+  margin-bottom: 0.5rem;
 }
