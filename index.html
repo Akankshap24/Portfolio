@@ -1,73 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title> Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akanksha - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <div class="nav__content">
-      <div class="logo"><a href="#">Akanksha Rath</a></div>
-      <label for="check" class="checkbox">
-        <i class="ri-menu-line"></i>
-      </label>
-      <input type="checkbox" name="check" id="check" />
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="https://github.com/Akankshap24">GitHub</a></li> <!-- Add GitHub link -->
-        <li><a href="https://www.linkedin.com/in/akanksha-priyadarshinee-rath/">LinkedIn</a></li> <!-- Add LinkedIn link -->
-      </ul>
-    </div>
-  </nav>
-  <section class="section">
-    <div class="section__container">
-      <div class="content">
-        <p class="subtitle">HELLO</p>
-        <h1 class="title">
-          I'm <span>Akanksha Rath<br />a</span> Web Developer
-        </h1>
-        <p class="description">
-          Passionate web developer and UI/UX designer dedicated to crafting captivating digital experiences. Seamlessly blending expertise in web development with intuitive design principles for visually stunning and functionally robust websites and applications. Committed to continuous learning and collaboration, pushing boundaries for exceptional results.
-        </p>
-        <div class="action__btns">
-          <button class="hire__me">Hire Me</button>
-          <button class="portfolio">Portfolio</button>
-        </div>
-      </div>
-      <div class="image">
-        <img src="Profile img.JPG" alt="profile" />
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div class="footer__content">
-      <div class="contact-info">
-        <h2>Contact Information</h2>
-        <p>Email: example@example.com</p>
-        <p>Phone: +1234567890</p>
-      </div>
-      <div class="projects">
-        <h2>Projects</h2>
+    <!-- Navigation -->
+    <nav>
         <ul>
-          <li>Project 1</li>
-          <li>Project 2</li>
-          <li>Project 3</li>
-          <!-- Add more projects as needed -->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-      <div class="qualifications">
-        <h2>Qualifications</h2>
-        <p>Bachelor's Degree in Computer Science</p>
-        <p>Certification in Web Development</p>
-      </div>
-    </div>
-  </footer>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <img src="Images/Profile Photo.jpeg" alt="Akanksha" class="profile-pic">
+            <h1>Hey there! I’m Akanksha</h1>
+            <p>A coder, blogger, and problem-solver crafting digital stories.</p>
+            <button onclick="scrollToSection('projects')">Explore My Work</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Myself</h2>
+        <p>I’m Akanksha, a developer who loves turning ideas into code. Currently pursuing Data Science at IIT Madras, I enjoy web development, data analysis, and creative problem-solving. When I’m not debugging, you’ll find me writing blogs, playing chess, painting, or enjoying a cup of chai ☕✨</p>
+        <span class="highlight">Fun Fact: I’ve solved 300+ coding problems!</span>
+    </section>
+
+    <!-- Coding Journey Section -->
+    <section id="journey">
+        <h2>My Coding Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Present: Growing at IIT Madras</h3>
+                    <p>Pursuing Data Science, exploring UX design, and building this portfolio—still moving upward!</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2024: Projects Take Shape</h3>
+                    <p>Connected the dots with Mega Mart dashboard and Netflix Clone—blending tech and creativity.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2024: Competitive Programming</h3>
+                    <p>Started solving problems on platforms like LeetCode, hitting 300+ solutions and sharpening my logic.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2023: Diving into Web Development</h3>
+                    <p>Learned HTML and CSS, built my first static webpage—a simple but proud moment.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2023: My First Code</h3>
+                    <p>Wrote my first "Hello World" in Python—sparked my curiosity and kicked off my coding adventure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <div class="resume-content">
+            <div class="resume-section">
+                <h3>Education</h3>
+                <p><strong>B.S. in Data Science and Its Applications</strong></p>
+                <p>IIT Madras — Ongoing</p>
+            </div>
+            <div class="resume-section">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Web Development (HTML, CSS, JavaScript)</li>
+                    <li>Competitive Programming</li>
+                    <li>Data Analysis (Python)</li>
+                    <li>UX Design Basics</li>
+                </ul>
+            </div>
+            <div class="resume-section">
+                <h3>Experience</h3>
+                <p><strong>Personal Projects</strong></p>
+                <p>Built a portfolio, Mega Mart dashboard, and Netflix Clone — 2023-Present</p>
+            </div>
+            <div class="resume-download">
+                <a href="Pdf/Resume.pdf" download class="resume-button">Download PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="Images/Mega mart.png" alt="Mega Mart Dashboard" class="project-img">
+                <h3>Mega Mart</h3>
+                <p>Strategic Data Insights: A comprehensive dashboard to monitor key metrics driving Mega Mart's success.</p>
+                <a href="https://github.com/Akankshap24/Assignment/tree/main/DA%20Assigment" target="_blank" class="project-button">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="Images/netflix.jpg" alt="Netflix Clone" class="project-img">
+                <h3>Netflix Clone</h3>
+                <p>A responsive streaming platform replica built with HTML, CSS, and JavaScript.</p>
+                <a href="https://clones-29l1pajod-akankshas-projects-85cdfbdd.vercel.app/" target="_blank" class="project-button">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs">
+        <h2>Blogs</h2>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <img src="Images/Photo_blog.webp" alt="My First Website" class="project-img">
+                <h3>My First Website: A Beginner's Tale</h3>
+                <p>My journey building and deploying my first website using HTML, CSS, and Vercel.</p>
+                <a href="https://akanksha24.hashnode.dev/my-first-website-a-beginners-tale-with-html-and-vercel" target="_blank" class="blog-link">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src="Images/UX.jpeg" alt="UX Design" class="project-img">
+                <h3>Unlocking Digital Delight: UX Design</h3>
+                <p>A deep dive into the exciting world of UX design and creative problem-solving.</p>
+                <a href="https://akanksha24.hashnode.dev/unlocking-the-door-to-digital-delight-explore-thrilling-career-paths-in-ux-design" target="_blank" class="blog-link">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xvgkvyjd" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
